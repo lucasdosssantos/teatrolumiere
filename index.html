@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teatro Lumière</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <span class="logo-icone">✦</span>
+      <div class="logo-texto">
+        <span class="logo-nome">Teatro Lumière</span>
+        <span class="logo-slogan">Desde 1998</span>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#">Em Cartaz</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <!-- Uso de Date() -->
+    <div id="relogio">
+      <span class="relogio-icone">◷</span>
+      <span id="relogioTexto"></span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-conteudo">
+        <p class="hero-eyebrow">Temporada 2026</p>
+        <h1>Viva a magia<br><em>do teatro</em></h1>
+        <p class="hero-sub">Escolha uma peça e mergulhe em uma experiência inesquecível.</p>
+        <div class="hero-linha"></div>
+      </div>
+    </section>
+
+    <!-- PEÇAS -->
+    <div class="secao-header">
+      <span class="secao-label">Programação</span>
+      <h2 class="titulo">Peças em Cartaz</h2>
+      <div class="titulo-ornamento">✦ ✦ ✦</div>
+    </div>
+
+    <section class="cardsContainer">
+
+      <!-- CARD 1 -->
+      <div class="card"
+        data-cor="#2d1654"
+        data-titulo="Shrek"
+        data-descricao="Shrek - O Musical acompanha um ogro solitário que tem seu pântano invadido por criaturas de contos de fadas. Para recuperar sua paz, ele faz um acordo com o Lorde Farquaad e parte em uma missão para resgatar a Princesa Fiona, acompanhado de um Burro tagarela, descobrindo o amor e a verdadeira amizade."
+        data-img1="s1.jpg"
+        data-img2="s2.png"
+        data-img3="s4.jpg">
+
+        <div class="card-badge">Musical</div>
+        <img src="shrek.webp" alt="Shrek">
+        <div class="conteudoCard">
+          <div class="card-info">
+            <h3>Shrek</h3>
+            <span class="card-duracao">2h 30min</span>
+          </div>
+          <button class="saibaMais">Saiba Mais</button>
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card"
+        data-cor="#5c0f0f"
+        data-titulo="Wicked"
+        data-descricao="Wicked conta a história não contada da Terra de Oz, revelando os eventos anteriores à chegada de Dorothy. A trama acompanha a amizade improvável entre Elphaba, uma jovem incompreendida de pele verde, e Glinda, uma garota popular e ambiciosa. Juntas, elas enfrentam o preconceito e descobrem os segredos sombrios do Mágico de Oz."
+        data-img1="w1.avif"
+        data-img2="w2.webp"
+        data-img3="w3.jpg">
+
+        <div class="card-badge">Destaque</div>
+        <img src="wickedBrasil.webp" alt="Wicked">
+        <div class="conteudoCard">
+          <div class="card-info">
+            <h3>Wicked</h3>
+            <span class="card-duracao">2h 45min</span>
+          </div>
+          <button class="saibaMais">Saiba Mais</button>
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card"
+        data-cor="#08213d"
+        data-titulo="O Diabo Veste Prada"
+        data-descricao="O Diabo Veste Prada acompanha a jovem e idealista jornalista Andy Sachs, que consegue um emprego na influente revista de moda Runway. Ela passa a enfrentar os desafios e as exigências implacáveis de sua chefe, a lendária e temida editora-chefe Miranda Priestly."
+        data-img1="d1.webp"
+        data-img2="d2.webp"
+        data-img3="d3.webp">
+
+        <div class="card-badge">Drama</div>
+        <img src="devil.avif" alt="O Diabo Veste Prada">
+        <div class="conteudoCard">
+          <div class="card-info">
+            <h3>O Diabo Veste Prada</h3>
+            <span class="card-duracao">2h 10min</span>
+          </div>
+          <button class="saibaMais">Saiba Mais</button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section class="sobre">
+      <div class="sobre-ornamento">✦</div>
+      <h2>Sobre o Teatro Lumière</h2>
+      <div class="sobre-linha"></div>
+      <p>
+        Fundado em 1998, o Teatro Lumière nasceu com o objetivo de trazer experiências inesquecíveis ao público
+        através da arte dramática. Com apresentações modernas, clássicas e musicais, o teatro se tornou
+        referência em entretenimento cultural.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- MODAL DETALHES -->
+  <section class="modal" id="modal">
+
+    <button class="fechar" id="fechar">✕</button>
+
+    <div class="modalImagem">
+      <img id="imagemModal" src="" alt="">
+      <div class="modal-img-overlay"></div>
+    </div>
+
+    <div class="modalInfo">
+      <span class="modal-eyebrow">Em Cartaz</span>
+      <h2 id="tituloModal"></h2>
+      <div class="modal-divisor"></div>
+      <p id="descricaoModal"></p>
+      <button class="comprar" id="abrirCompra">
+        <span>🎟</span> Comprar Ingresso
+      </button>
+    </div>
+
+  </section>
+
+  <!-- MODAL COMPRA -->
+  <section class="modalCompra" id="modalCompra">
+
+    <button class="fecharCompra" id="fecharCompra">✕</button>
+
+    <div class="compra-header">
+      <span class="compra-icone">🎭</span>
+      <h2>Comprar Ingresso</h2>
+    </div>
+
+    <div class="compra-linha"></div>
+
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+
+    <label for="quantidade">Quantidade de ingressos</label>
+    <input type="number" id="quantidade" placeholder="Ex: 2" min="1">
+
+    <button id="finalizar">Finalizar Compra</button>
+
+    <p id="mensagem"></p>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-ornamento">✦ Teatro Lumière ✦</div>
+    <p>© 2026 Teatro Lumière — Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
